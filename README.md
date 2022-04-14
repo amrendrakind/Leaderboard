@@ -32,7 +32,7 @@ OR  using HTTPS
 
 move into project directory
 
-`cd ToDoList`
+`cd Leaderboard`
 
 Install  Project dependancies using `NPM` 
 
