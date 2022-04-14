@@ -16,7 +16,7 @@
 - Webpack
 
 
-## Live Demo (Link for My ToDoList Project)
+## Live Demo (Link for Leaderboard Project)
 
 [Live Demo Link](https://amrendrakind.github.io/Leaderboard)
 
