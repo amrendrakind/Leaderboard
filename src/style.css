@@ -8,8 +8,15 @@ body {
   width: 70%;
 }
 
+h1 {
+  color: rgb(8, 0, 255);
+  font-size: 50px;
+}
+
 h3 {
   margin: 0;
+  font-size: 30px;
+  color: rgb(73, 78, 246);
 }
 
 .container {
@@ -33,6 +40,7 @@ h3 {
   list-style: none;
   padding-left: 0;
   border-radius: 10px;
+  color: rgb(45, 40, 208);
 }
 
 .scores-list .recent-score {
@@ -40,7 +48,8 @@ h3 {
 }
 
 .recent-score:nth-child(even) {
-  background-color: rgb(134, 145, 232);
+  background-color: rgb(45, 40, 208);
+  color: white;
 }
 
 .container form {
@@ -54,6 +63,17 @@ h3 {
   margin: 10px 0;
 }
 
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  background-color: rgb(45, 40, 208);;
+  color: white;
+  border: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -63,9 +83,9 @@ button:hover {
 }
 
 .warning {
-  width: 94.5%;
+  width: 96%;
   padding: 10px;
-  color: #ddd;
+  color: rgb(221, 221, 221);
   border-radius: 5px;
   font-size: 15px;
   font-weight: 400;
