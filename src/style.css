@@ -36,7 +36,7 @@ h3 {
 }
 
 .scores .scores-list {
-  border: 1px solid black;
+  border: 2px solid rgb(45, 40, 208);
   list-style: none;
   padding-left: 0;
   border-radius: 10px;
@@ -85,7 +85,7 @@ button:hover {
 .warning {
   width: 96%;
   padding: 10px;
-  color: rgb(221, 221, 221);
+  color: rgb(31, 23, 246);
   border-radius: 5px;
   font-size: 15px;
   font-weight: 400;
@@ -97,4 +97,34 @@ button:hover {
 
 .success {
   background-color: green;
+}
+
+
+@media screen and (max-width: 510px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .container .scores {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .container form {
+    padding: 0;
+  }
+  
+  .container form input {
+    width: 91.5%;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 10px 0;
+  }  
 }
