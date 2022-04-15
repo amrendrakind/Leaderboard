@@ -50,6 +50,7 @@ h3 {
 .recent-score:nth-child(even) {
   background-color: rgb(45, 40, 208);
   color: white;
+  border-radius: 5px;
 }
 
 .container form {
@@ -57,11 +58,12 @@ h3 {
 }
 
 .container form input {
-  width: 94.5%;
+  width: 95%;
   height: 30px;
   padding: 5px 10px;
   margin: 10px 0;
   border: 1px solid rgb(45, 40, 208);
+  border-radius: 5px;
 }
 
 button {
@@ -127,5 +129,6 @@ button:hover {
     padding: 5px 10px;
     margin: 10px 0;
     border: 1px solid rgb(45, 40, 208);
+    border-radius: 5px;
   }
 }
