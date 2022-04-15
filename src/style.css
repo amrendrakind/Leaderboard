@@ -61,6 +61,7 @@ h3 {
   height: 30px;
   padding: 5px 10px;
   margin: 10px 0;
+  border: 1px solid rgb(45, 40, 208);
 }
 
 button {
@@ -99,7 +100,6 @@ button:hover {
   background-color: green;
 }
 
-
 @media screen and (max-width: 510px) {
   .container {
     display: flex;
@@ -120,11 +120,12 @@ button:hover {
   .container form {
     padding: 0;
   }
-  
+
   .container form input {
     width: 91.5%;
     height: 30px;
     padding: 5px 10px;
     margin: 10px 0;
-  }  
+    border: 1px solid rgb(45, 40, 208);
+  }
 }
