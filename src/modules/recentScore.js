@@ -1,3 +1,5 @@
+import ApiClient from './getScore.js';
+
 export default () => {
   const wrapper = document.createElement('div');
   wrapper.classList.add('scores');
@@ -15,15 +17,22 @@ export default () => {
   refreshBtn.innerText = 'Refresh';
   heading.appendChild(refreshBtn);
 
+  refreshBtn.onclick = () => {
+    window.location.reload();
+  };
+
   const scoreList = document.createElement('ul');
   scoreList.classList.add('scores-list');
-  scoreList.innerHTML = `<li class="recent-score"> Name: 100</li>
-                        <li class="recent-score"> Name: 20</li>
-                        <li class="recent-score"> Name: 50</li>
-                        <li class="recent-score"> Name: 78</li>
-                        <li class="recent-score"> Name: 125</li>
-                        <li class="recent-score"> Name: 77</li>
-                        <li class="recent-score"> Name: 42</li>`;
+  ApiClient.getScores().then(
+    (scores) => {
+      scoreList.innerHTML = '';
+      scores.result.forEach((score) => {
+        scoreList.innerHTML += `<li class="recent-score"> ${score.user}: ${score.score}</li>`;
+      });
+    },
+  ).catch(() => {
+    scoreList.innerHTML = ' Error Loading ';
+  });
   wrapper.appendChild(heading);
   wrapper.appendChild(scoreList);
   return wrapper;
