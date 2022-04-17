@@ -8,8 +8,15 @@ body {
   width: 70%;
 }
 
+h1 {
+  color: rgb(8, 0, 255);
+  font-size: 50px;
+}
+
 h3 {
   margin: 0;
+  font-size: 30px;
+  color: rgb(73, 78, 246);
 }
 
 .container {
@@ -29,10 +36,11 @@ h3 {
 }
 
 .scores .scores-list {
-  border: 1px solid black;
+  border: 2px solid rgb(45, 40, 208);
   list-style: none;
   padding-left: 0;
   border-radius: 10px;
+  color: rgb(45, 40, 208);
 }
 
 .scores-list .recent-score {
@@ -40,7 +48,9 @@ h3 {
 }
 
 .recent-score:nth-child(even) {
-  background-color: rgb(134, 145, 232);
+  background-color: rgb(45, 40, 208);
+  color: white;
+  border-radius: 5px;
 }
 
 .container form {
@@ -48,10 +58,23 @@ h3 {
 }
 
 .container form input {
-  width: 94.5%;
+  width: 95%;
   height: 30px;
   padding: 5px 10px;
   margin: 10px 0;
+  border: 1px solid rgb(45, 40, 208);
+  border-radius: 5px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  background-color: rgb(45, 40, 208);
+  color: white;
+  border: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 button:hover {
@@ -63,9 +86,9 @@ button:hover {
 }
 
 .warning {
-  width: 94.5%;
+  width: 96%;
   padding: 10px;
-  color: #ddd;
+  color: rgb(31, 23, 246);
   border-radius: 5px;
   font-size: 15px;
   font-weight: 400;
@@ -77,4 +100,35 @@ button:hover {
 
 .success {
   background-color: green;
+}
+
+@media screen and (max-width: 510px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .container .scores {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .container form {
+    padding: 0;
+  }
+
+  .container form input {
+    width: 91.5%;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(45, 40, 208);
+    border-radius: 5px;
+  }
 }
